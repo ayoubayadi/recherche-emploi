@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="size-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>  
 </head>
-<body class="bg-[#011222]">
-
-    <nav class="bg-[#012135] fixed w-full ">
+<body class="bg-cover bg-gradient-to-tr from-[#002A3F]  via-[#011222]  to-[#002A3F] size-full  ">
+<!-- NAV BAR -->
+    <nav class="bg-[#012135] fixed w-full mb-5 ">
     <div class=" flex list-none  ">
-        <a href="" class="float-start w-20 h-24 ml-10 mr-20 "><img src="LOGO.png" alt=""></a>
+        <a href="index.html" class="float-start w-20 h-24 ml-10 mr-20 "><img src="LOGO.png" alt=""></a>
         <ul class="float-start flex space-x-8 text-white my-auto text-xl font-bold   ">
             <li class="hover:underline hover:text-[#02CEC6] duration-500"><a href="">Markets</a> </li>
             <li class="hover:underline hover:text-[#02CEC6] duration-500"><a href="">About Us</a></li>
@@ -19,26 +19,55 @@
         </ul>
         <ul class="list-none flex float-right space-x-8 text-white font-bold my-auto ml-auto mr-8">
             <li class=" hover:underline hover:text-[#02CEC6] duration-500 text-xl my-auto"><a href="">English</a></li>
-            <li><button type="submit"  class="text-base bg-transparent border-2 border-[#02CEC6] rounded-full hover:text-[#02CEC6] duration-500 px-8 py-2">log in</button></li>
-            <li><a href="sign_up.html"><button class="bg-[#02CEC6] text-black px-8 py-2 rounded-full hover:bg-[#1ddac7] duration-500">sign up</button></a></li>
+            <li><a href="login.html"><button type="submit"  class="text-base bg-transparent border-2 border-[#02CEC6] rounded-full hover:text-[#02CEC6] duration-500 px-8 py-2">log in</button></a></li>
+            <li><a href="sign_up.html"><button class="bg-[#02CEC6] text-black px-8 py-2 rounded-full hover:bg-[#3cf2e0] duration-500">sign up</button></a></li>
         </ul>
     </div>
-    </nav> <br>  
+    </nav> 
+
+    <br> 
+
+<main class="flex mt-20 mb-auto max-h-full">
+    <div class="w-full max-h-full ">
+<!-- WELCOME TEXT INDEX -->
+        <div class="  h-auto my-10 p-8 object-top  ">
+            <p class="font-bold text-justify text-7xl  text-white">Welcome,</p> <br> <br>
+            <p class="font-sans text-3xl text-white align-bottom">&numsp;&numsp;&rAarr;&numsp;Create Your CV With Us And Find a Job</p>
+            <p class="font-sans text-3xl text-white align-bottom">&numsp;&numsp;&rAarr;&numsp;Find The Perfect Job That You Deserved</p>
+            <p class="font-sans text-3xl text-white align-bottom">&numsp;&numsp;&rAarr;&numsp;Find The Best Startup Job That Fit You</p>
+            
+        </div>
+<!-- BUTTONS -->
+        <div class="mx-8 mt-20 mb-0 flex object-bottom ">  
+            <a href="#"><button class="w-48 h-10 text-xl capitalize box-content bg-[#02CEC6] text-black px-8 py-2 rounded-full font-bold hover:bg-[rgb(57,233,216)] duration-500 ">view live trading</button></a>
+            <a href="#" class="ml-9">
+                <svg class=" hover:bg-[#1ddac7] duration-500 rounded-full" xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" >
+                <circle cx="28" cy="28" r="27.462" stroke="#62CBC1" stroke-width="1.077" ></circle>
+                <path d="M34.526 27.692a5.985 5.985 0 0 1 2.759-4.905 5.848 5.848 0 0 0-4.7-2.548c-1.942-.204-3.884 1.226-4.905 1.226-1.021 0-2.555-1.124-4.291-1.124a6.337 6.337 0 0 0-5.314 3.268c-2.248 3.986-.613 9.807 1.634 12.976 1.125 1.533 2.354 3.269 4.088 3.269 1.634-.102 2.247-1.021 4.183-1.021 1.937 0 2.555 1.018 4.297 1.018 1.742 0 2.86-1.532 3.883-3.168A21.25 21.25 0 0 0 38 33.005a6.483 6.483 0 0 1-3.474-5.314zM31.366 18.088A5.377 5.377 0 0 0 32.695 14a6.46 6.46 0 0 0-3.78 1.942 5.409 5.409 0 0 0-1.33 3.986 4.838 4.838 0 0 0 3.781-1.84z" fill="#fff"></path>
+                </svg>
+            </a>
+            <a href="#" class="ml-9 "> 
+                <svg class=" hover:bg-[#1ddac7] duration-500 rounded-full" xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none">
+                
+                    <circle  cx="28" cy="28" r="27.462" stroke="#62CBC1" stroke-width="1.077"></circle>
+                    <path  d="M21.405 40.715a1.402 1.402 0 0 1-.83-.252l-.054.058-.086-.087a1.989 1.989 0 0 1-.09-.127L31.93 28.733l4.028 4.021L22.43 40.43a2.14 2.14 0 0 1-1.026.286zm-1.27-.833a2.44 2.44 0 0 1-.135-.84v-21.25a2.73 2.73 0 0 1 .127-.846l11.486 11.472L20.138 39.88l-.002.002zm16.22-7.354-4.11-4.105 4.233-4.234.022.022 4.69 2.688a1.708 1.708 0 0 1 .977 1.39 1.704 1.704 0 0 1-.978 1.386l-4.689 2.69-.043.043.042.042-.139.079-.005-.001zm-4.43-4.425-11.591-11.58a.969.969 0 0 1 .1-.118A1.14 1.14 0 0 1 21.35 16a2.28 2.28 0 0 1 1.08.315l13.586 7.705-4.086 4.081-.006.001z" fill="#fff"></path>
+                </svg>
+            </a>
+        </div>                            
+    </div>    
+<!-- IMG INDEX -->
+    <div class="object-right  object-fill w-10/12    "  >
+        <img src="Capture1.png" alt="" class=" max-w-full  " >
+    </div>
+    
+</main>
 
 
-    <div class=" w-1/3 h-auto mt-20 p-8  ">
-        <p class="font-bold text-justify text-6xl align-bottom text-white">Welcome,</p> <br>
-        <p class="font-serif text-2xl text-white align-bottom">create your cv with us and find a job</p>
-        . <br>
-        . <br>
-        . <br>
-        . <br>  
-        . <br>
-        . <br>
-        . <br>
-        . <br>   
 
-    </div> 
+
+
+
+
 
 </body>
 </html>

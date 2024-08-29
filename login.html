@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="size-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-no-repeat bg-cover " style="background-image: url(sign\ up\ bg.jpeg);">
+<!-- NAV BAR -->
+<nav id="navbar" class="bg-[#012135] fixed w-full mb-5 ">
+  <!-- Other navigation items... -->
+  <a href="index.html" class="float-start w-20 h-16 ml-10 mr-20   "><img src="LOGO.png" alt="" class="size-16"></a>
+  <!-- Language switcher -->
+  <div id="language-switcher" class="flex  " >
+    <button id="language-button"class="float-right w-full">
+      <img src="lan icon.png" alt="Select Language " class="size-10  ">
+    </button>
+    <ul id="language-options">
+      <li><a href="#">English</a></li>
+      <li><a href="#">Français</a></li>
+      <li><a href="#">عربية</a></li>
+    </ul>
+  </div>
+<!--STYLE NAVBAR -->
+<style>  
+#language-switcher {
+  position: relative;
+}
+
+#language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#language-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1D2026;
+  border: 1px solid #1D2026;
+  padding: 0;
+  list-style: none;
+}
+
+#language-options li {
+  padding: 8px 16px;
+}
+
+#language-options li a {
+  text-decoration: none;
+  color: #dfdfdf;
+  display: block;
+}
+
+#language-button:hover + #language-options,
+#language-options:hover {
+  display: block;
+  border-radius: 6px;
+}
+
+  </style>
+
+</nav>
+  
+
+<!-- sign up -->
+<div class="container">
+  <input type="checkbox" id="check">
+  <div class="login form">
+    <header>Login</header>
+    <form action="#">
+      <input type="text" placeholder="Enter your email">
+      <input type="password" placeholder="Enter your password">
+      <a href="#">Forgot password?</a>
+      <input type="button" class="button" value="Login">
+    </form>
+    <div class="signup">
+      <span class="signup"> <p class="text-gray-300 ">Don't have an account?
+      <label for="check">Signup</label>
+      </span>
+    </div>
+  </div>
+  <div class="registration form">
+    <header>Signup</header>
+    <form action="#">
+      <input type="text" placeholder="Enter your email">
+      <input type="password" placeholder="Create a password">
+      <input type="password" placeholder="Confirm your password">
+      <input type="button" class="button" value="Signup">
+    </form>
+    <div class="signup">
+      <span class="signup"><p class="text-gray-300 ">Already have an account?
+      <label for="check">Login</label>
+      </span>
+    </div>
+  </div>
+</div>
+<!--   css    -->
+<style>
+  /* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #009579;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #012135;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.container .registration{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: block;
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) /* #ffffff */;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: #009579;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+  color: #fff;
+  background: #009579;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: #006653;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: #009579;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+</style>
+<!-- /sign up -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
